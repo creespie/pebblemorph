@@ -55,15 +55,13 @@
         <h3>Annuale</h3>
         <p class="price"><strong>10 €</strong><span>l'anno</span></p>
         <p class="what">Si rinnova ogni anno. Puoi disdire quando vuoi.</p>
-        <a class="btn main" href="
-#download">Compra l'annuale</a>
+        <a class="btn main" href="{{NEGOZIO}}">Compra l'annuale</a>
       </div>
       <div class="plan">
         <h3>Per sempre</h3>
         <p class="price"><strong>60 €</strong><span>una volta</span></p>
         <p class="what">Paghi una volta e lo tieni, con tutti gli aggiornamenti.</p>
-        <a class="btn main" href="
-#download">Compra per sempre</a>
+        <a class="btn main" href="{{NEGOZIO}}">Compra per sempre</a>
       </div>
     </div>
     <ul class="both">
@@ -111,27 +109,24 @@
 <section class="block" id="download">
   <div class="wrap">
     <h2>Scarica</h2>
-    <table class="table downloads">
+    <table class="table">
       <tbody>
-        <tr><td>Mac con chip Apple (M1 o successivi)</td><td class="soft">macOS 12 o successivo</td><td class="get"><a class="btn main" href="https://github.com/creespie/pebblemorph/releases/latest/download/Pebblemorph-Mac-Apple.dmg">Scarica</a></td></tr>
-        <tr><td>Mac con processore Intel</td><td class="soft">macOS 11 o successivo</td><td class="get"><a class="btn main" href="https://github.com/creespie/pebblemorph/releases/latest/download/Pebblemorph-Mac-Intel.dmg">Scarica</a></td></tr>
-        <tr><td>PC Windows</td><td class="soft">Windows 10 o 11, 64 bit</td><td class="get"><a class="btn main" href="https://github.com/creespie/pebblemorph/releases/latest/download/Pebblemorph-Windows.zip">Scarica</a></td></tr>
+        <tr><td>Mac con chip Apple (M1 o successivi)</td><td class="soft">macOS 12 o successivo</td></tr>
+        <tr><td>Mac con processore Intel</td><td class="soft">macOS 11 o successivo</td></tr>
+        <tr><td>PC Windows</td><td class="soft">Windows 10 o 11, 64 bit</td></tr>
       </tbody>
     </table>
+    <div class="actions"><a class="btn main" href="https://github.com/creespie/pebblemorph/releases/latest">Vai ai download</a></div>
     <p class="note">Non sai che Mac hai? Menu Apple, Informazioni su questo Mac: c'è scritto “Chip Apple M…” oppure “Processore Intel”.</p>
     <p class="note">La prima volta che lo apri: Pebblemorph non è ancora firmato con i certificati di Apple e Microsoft, quindi il computer ti chiede di confermare. Sul Mac: Impostazioni di Sistema, Privacy e sicurezza, Apri comunque. Su Windows: Ulteriori informazioni, Esegui comunque.</p>
     <p class="note">I file di Word, Excel, PowerPoint e gli e-book richiedono anche LibreOffice, che è gratuito: lo installa Pebblemorph quando glielo chiedi.</p>
-    <p class="note">Tutte le versioni, con il codice sorgente delle parti open source che contengono, sono nella <a href="https://github.com/creespie/pebblemorph/releases">pagina delle versioni</a>.</p>
   </div>
 </section>
 
 <section class="block" id="who">
   <div class="wrap">
     <h2>Chi lo fa</h2>
-    <p class="person">Pebblemorph è fatto da Ludovico Rossi
-, uno sviluppatore indipendente in Italia. Domande, problemi, idee: scrivi a <a href="mailto:
-support@pebblemorph.com">
-support@pebblemorph.com</a> e ti rispondo io.</p>
+    <p class="person">Pebblemorph è fatto da {{NOME}}, uno sviluppatore indipendente in Italia. Domande, problemi, idee: scrivi a <a href="mailto:{{EMAIL}}">{{EMAIL}}</a> e ti rispondo io.</p>
   </div>
 </section>
 
@@ -150,10 +145,7 @@ support@pebblemorph.com</a> e ti rispondo io.</p>
 <footer>
   <div class="wrap">
     <div>
-      <p>© 2026 Ludovico Rossi
-, Italia. <a href="mailto:
-support@pebblemorph.com">
-support@pebblemorph.com</a></p>
+      <p>© 2026 {{NOME}}, Italia. <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
       <p>I pagamenti sono gestiti da Lemon Squeezy, che fa da venditore (merchant of record).</p>
       <p>Questo sito non usa cookie e non carica niente da altri siti.</p>
     </div>
