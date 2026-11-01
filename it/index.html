@@ -24,7 +24,7 @@
 <div class="wrap hero">
   <div>
     <h1>Ogni file che scarichi, pronto da aprire.</h1>
-    <p class="lead">Pebblemorph tiene d'occhio la cartella Download e trasforma i file scomodi in formati che ogni dispositivo apre: foto HEIC in JPEG, video MKV in MP4, PDF pesanti in PDF leggeri. Sul tuo computer, senza caricare niente.</p>
+    <p class="lead">Pebblemorph tiene d'occhio la cartella Download e trasforma i file scomodi in formati che ogni dispositivo apre: foto HEIC in JPEG, video MKV in MP4, PDF pesanti in PDF leggeri. Sul tuo computer, senza usare applicazioni o siti esterni.</p>
     <div class="actions">
       <a class="btn main" href="#download">Provalo gratis per 30 giorni</a>
       <a class="btn plain" href="#prices">Vedi i prezzi</a>
@@ -80,8 +80,8 @@
     <div class="facts">
       <div><h3>I tuoi file non lasciano mai il computer</h3><p>Ogni conversione avviene sul tuo Mac o PC. Non viene caricato niente, mai.</p></div>
       <div><h3>Gli originali non si perdono</h3><p>L'originale va nel Cestino, da dove puoi rimetterlo a posto, oppure resta accanto al nuovo file se preferisci. Niente viene sovrascritto.</p></div>
-      <div><h3>I documenti delicati non vengono mai riscritti</h3><p>PDF firmati, certificati o protetti da password e PDF/A d'archivio non vengono compressi, e vedi il perché. Se scegli di trasformare i PDF in un altro formato, l'originale di un documento così resta accanto al nuovo file.</p></div>
-      <div><h3>Niente a metà</h3><p>Un download viene convertito solo quando è finito. Un file che non si può convertire bene resta com'era, e vedi perché.</p></div>
+      <div><h3>I documenti delicati non vengono mai riscritti</h3><p>PDF firmati, certificati o protetti da password e PDF/A d'archivio non vengono compressi. Se scegli di trasformare i PDF in un altro formato, l'originale rimane invariato.</p></div>
+      <div><h3>Niente a metà</h3><p>In caso di conversione non andata a buon fine, il file originale resta invariato.</p></div>
       <div><h3>Nessun account, nessun tracciamento, nessuna pubblicità</h3><p>Su internet passa solo il controllo della licenza, circa una volta a settimana: il codice e il nome del computer. Durante la prova niente, a meno che tu non gli chieda di installare LibreOffice.</p></div>
       <div><h3>Costruito su strumenti di cui il mondo si fida</h3><p>A convertire sono FFmpeg, LibreOffice, Pillow e altri progetti open source. Le loro licenze sono dentro l'app.</p></div>
     </div>
@@ -91,18 +91,58 @@
 <section class="block" id="what">
   <div class="wrap">
     <h2>Cosa converte</h2>
-    <p class="intro">Appena installato converte quattro tipi di file. Tutto il resto aspetta che tu scelga un formato.</p>
+    <p class="intro">Tredici tipi di file, sul tuo computer: cosa legge Pebblemorph, e tutto quello in cui può trasformarlo.</p>
     <table class="table">
-      <thead><tr><th>Tipo di file</th><th>Arriva come, per esempio</th><th>Diventa</th></tr></thead>
+      <thead><tr><th>Tipo di file</th><th>Da</th><th>In</th></tr></thead>
       <tbody>
-        <tr><td>Foto</td><td class="soft" data-label="Arriva come">HEIC, WebP, AVIF, PNG, TIFF</td><td data-label="Diventa">JPEG</td></tr>
-        <tr><td>Video</td><td class="soft" data-label="Arriva come">MOV, MKV, AVI, WebM</td><td data-label="Diventa">MP4</td></tr>
-        <tr><td>Musica e audio</td><td class="soft" data-label="Arriva come">WAV, FLAC, M4A, OGG</td><td data-label="Diventa">MP3</td></tr>
-        <tr><td>PDF oltre 2 MB</td><td class="soft" data-label="Arriva come">PDF</td><td data-label="Diventa">lo stesso PDF, più leggero</td></tr>
-        <tr><td>Documenti, fogli di calcolo, presentazioni, e-book, archivi, font, sottotitoli, dati</td><td class="soft" data-label="Arriva come">DOCX, XLSX, PPTX, EPUB, RAR, 7z</td><td><span class="soft">restano come sono finché non scegli un formato</span></td></tr>
+        <tr><td>Foto e immagini</td><td class="soft" data-label="Da">HEIC, WebP, AVIF, JPEG XL, PNG, JPEG, GIF, TIFF, BMP</td><td data-label="In">JPEG, PNG, WebP, AVIF, GIF, TIFF, BMP, PDF</td></tr>
+        <tr><td>Video</td><td class="soft" data-label="Da">MOV, MP4, MKV, WebM, AVI, WMV, FLV, MPEG, AVCHD, 3GP</td><td data-label="In">MP4, MOV, MKV, WebM, GIF, o solo l'audio (MP3, M4A e gli altri formati audio)</td></tr>
+        <tr><td>Musica e audio</td><td class="soft" data-label="Da">MP3, M4A, AAC, WAV, FLAC, AIFF, Ogg, Opus, WMA, AMR, CAF</td><td data-label="In">MP3, M4A, AAC, WAV, FLAC, AIFF, Ogg, Opus</td></tr>
+        <tr><td>PDF</td><td class="soft" data-label="Da">PDF</td><td data-label="In">un PDF più leggero; Word, OpenDocument*, RTF*, EPUB*, HTML, Markdown, XML, testo; un'immagine di un PDF di una pagina</td></tr>
+        <tr><td>Documenti*</td><td class="soft" data-label="Da">Word (DOCX, DOC), OpenDocument, RTF</td><td data-label="In">PDF, Word, OpenDocument, RTF, EPUB, HTML, testo</td></tr>
+        <tr><td>Testi e pagine web</td><td class="soft" data-label="Da">TXT, Markdown, HTML, email (EML)</td><td data-label="In">PDF*, Word*, OpenDocument*, RTF*, EPUB*, HTML, testo</td></tr>
+        <tr><td>Fogli di calcolo*</td><td class="soft" data-label="Da">Excel (XLSX, XLS), OpenDocument, CSV</td><td data-label="In">Excel, OpenDocument, PDF, CSV, HTML</td></tr>
+        <tr><td>Presentazioni*</td><td class="soft" data-label="Da">PowerPoint (PPTX, PPT), OpenDocument</td><td data-label="In">PowerPoint, OpenDocument, PDF</td></tr>
+        <tr><td>E-book</td><td class="soft" data-label="Da">EPUB</td><td data-label="In">PDF*, Word*, OpenDocument*, RTF*, HTML, testo</td></tr>
+        <tr><td>Archivi compressi</td><td class="soft" data-label="Da">RAR, 7-Zip, tar, gzip, bzip2, xz, Zstandard</td><td data-label="In">ZIP</td></tr>
+        <tr><td>Sottotitoli</td><td class="soft" data-label="Da">SRT, VTT, ASS</td><td data-label="In">SRT, VTT, ASS</td></tr>
+        <tr><td>File di dati</td><td class="soft" data-label="Da">JSON, XML, YAML</td><td data-label="In">JSON, XML, YAML, CSV</td></tr>
+        <tr><td>Caratteri</td><td class="soft" data-label="Da">TTF, OTF, WOFF, WOFF2</td><td data-label="In">WOFF2, WOFF, TTF, OTF</td></tr>
       </tbody>
     </table>
-    <p class="note">Ogni scelta si può cambiare nelle impostazioni. Per convertire file che hai già, scegli una cartella e usa Converti ora.</p>
+    <p class="note">I file scaricati vengono convertiti appena finiscono di scaricarsi; quelli che hai già, con Converti ora. Anche i RAW delle fotocamere, i file di Photoshop e gli SVG si possono convertire, con una regola tua nelle impostazioni avanzate.</p>
+    <p class="note">* Con LibreOffice, che è gratuito: lo installa Pebblemorph quando glielo chiedi.</p>
+  </div>
+</section>
+
+<section class="block" id="defaults">
+  <div class="wrap">
+    <h2>Impostazioni iniziali</h2>
+    <p class="intro">Appena installato, Pebblemorph cambia solo quattro tipi di file, nei formati che ogni dispositivo apre. Tutto il resto resta com'è finché non scegli un formato, e ogni scelta si cambia nelle impostazioni.</p>
+    <table class="table">
+      <thead><tr><th>Tipo di file</th><th>Diventa</th></tr></thead>
+      <tbody>
+        <tr><td>Foto e immagini</td><td data-label="Diventa">JPEG <span class="soft">(senza posizione e dati della fotocamera, con i colori originali)</span></td></tr>
+        <tr><td>Video</td><td data-label="Diventa">MP4 <span class="soft">(copiato in pochi secondi quando l'immagine lo permette; senza posizione)</span></td></tr>
+        <tr><td>Musica e audio</td><td data-label="Diventa">MP3</td></tr>
+        <tr><td>PDF oltre 2 MB</td><td data-label="Diventa">lo stesso PDF, più leggero</td></tr>
+        <tr><td>Tutto il resto</td><td data-label="Diventa"><span class="soft">resta com'è finché non scegli un formato</span></td></tr>
+      </tbody>
+    </table>
+    <p class="note">All'inizio tiene d'occhio la cartella Download. Al primo avvio propone di tenere ogni originale accanto al nuovo file; altrimenti gli originali vanno nel Cestino, da dove puoi ripristinarli.</p>
+  </div>
+</section>
+
+<section class="block" id="magic">
+  <div class="wrap">
+    <h2>Cartelle magiche</h2>
+    <p class="intro">Qualsiasi cartella può funzionare come quella dei download: quello che ci metti dentro viene convertito da solo, appena arriva.</p>
+    <ol class="steps">
+      <li><h3>Crea una cartella</h3><p>Per esempio “Da convertire” sulla scrivania, o quella in cui salva lo scanner.</p></li>
+      <li><h3>Aggiungila a Pebblemorph</h3><p>Apri Cartelle, fai clic su Aggiungi una cartella e sceglila. Puoi aggiungerne quante vuoi.</p></li>
+      <li><h3>Mettici dentro i file</h3><p>Trascinali o salvali lì: ognuno viene convertito appena arriva, con le tue impostazioni.</p></li>
+    </ol>
+    <p class="note">Tutte le cartelle seguono le stesse impostazioni. I file che c'erano già quando aggiungi una cartella restano come sono: per quelli c'è Converti ora. Vengono convertiti solo i file messi direttamente nella cartella, non quelli nelle cartelle al suo interno. Funziona finché Pebblemorph è in funzione, anche a finestra chiusa.</p>
   </div>
 </section>
 

@@ -129,6 +129,16 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.015em; }
 .soon-note { color: var(--ink); font-weight: 500; }
 .note { color: var(--soft); font-size: 0.95rem; max-width: 70ch; margin-top: 18px; }
 
+/* Magic folders: three numbered steps side by side, one under the other on a phone. */
+.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 32px; max-width: 920px;
+         margin: 0; padding: 0; list-style: none; counter-reset: step; }
+.steps li { counter-increment: step; padding: 18px 0; border-top: 1px solid var(--line); }
+.steps li::before { content: counter(step); display: grid; place-items: center; width: 28px; height: 28px;
+                    margin-bottom: 10px; border-radius: 50%; background: var(--ink); color: var(--paper);
+                    font-weight: 700; font-size: 0.9rem; }
+.steps h3 { font-size: 1.05rem; margin: 0 0 6px; }
+.steps p { color: var(--soft); margin: 0; }
+
 .faq { max-width: 760px; }
 .faq div { border-top: 1px solid var(--line); padding: 16px 0; }
 .faq h3 { font-size: 1.05rem; margin: 0 0 6px; }
@@ -154,6 +164,7 @@ code { font-size: 0.92em; background: var(--surface); padding: 1px 5px; border-r
 @media (max-width: 860px) {
   .hero { grid-template-columns: 1fr; gap: 32px; padding-top: 12px; }
   .facts { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; }
 }
 @media (max-width: 600px) {
   body { font-size: 16px; }
