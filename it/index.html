@@ -66,7 +66,7 @@
     </div>
     <ul class="both">
       <li>Ogni licenza vale su 3 computer, Mac e Windows insieme.</li>
-      <li>Te ne servono di più? Ogni computer in più costa 5 €, pagati una volta sola, fino a 10 per licenza.</li>
+      <li>Te ne servono di più? Una seconda licenza copre altri 3 computer.</li>
       <li>I prezzi comprendono l'IVA.</li>
       <li>Non ti convince? Rimborso completo entro 14 giorni da ogni pagamento.</li>
     </ul>
@@ -112,8 +112,31 @@
         <tr><td>Caratteri</td><td class="soft" data-label="Da">TTF, OTF, WOFF, WOFF2</td><td data-label="In">WOFF2, WOFF, TTF, OTF</td></tr>
       </tbody>
     </table>
-    <p class="note">I file scaricati vengono convertiti appena finiscono di scaricarsi; quelli che hai già, con Converti ora. I file di Publisher si convertono solo con Converti ora, mai al loro arrivo. Gli e-book protetti da DRM, come quelli comprati su Amazon, restano come sono. Anche i RAW delle fotocamere, i file di Photoshop, gli SVG e la musica da collezionisti (APE, WavPack, TTA, DSD, Musepack) si possono convertire, con una regola personale specifica nelle impostazioni avanzate.</p>
+    <p class="note">I file scaricati vengono convertiti appena finiscono di scaricarsi; quelli che hai già, con Converti ora. Alcuni formati si convertono solo se lo chiedi: sono qui sotto, in Formati speciali.</p>
     <p class="note">* Con LibreOffice, che è gratuito: lo installa Pebblemorph quando glielo chiedi.</p>
+  </div>
+</section>
+
+<section class="block" id="special">
+  <div class="wrap">
+    <h2>Formati speciali</h2>
+    <p class="intro">Alcuni file restano come sono anche quando scegli un formato per il loro tipo, perché convertirli da soli farebbe perdere qualcosa. Si convertono solo se lo chiedi, con una regola tua.</p>
+    <table class="table">
+      <thead><tr><th>File</th><th>Formati</th><th>Possono diventare</th><th>Perché restano fuori</th></tr></thead>
+      <tbody>
+        <tr><td>RAW delle fotocamere</td><td class="soft" data-label="Formati">DNG, CR2, CR3, NEF, ARW, ORF, RW2, RAF, PEF e altri</td><td data-label="Possono diventare">JPEG, PNG, TIFF, WebP, AVIF, a piena risoluzione</td><td class="soft" data-label="Perché">si perderebbero i dati grezzi del sensore, che servono per ritoccare la foto</td></tr>
+        <tr><td>Photoshop</td><td class="soft" data-label="Formati">PSD</td><td data-label="Possono diventare">JPEG, PNG, WebP, AVIF, TIFF, GIF, BMP</td><td class="soft" data-label="Perché">si perderebbero i livelli</td></tr>
+        <tr><td>Disegni vettoriali</td><td class="soft" data-label="Formati">SVG</td><td data-label="Possono diventare">PNG, JPEG, WebP, AVIF (almeno 1024 pixel), oppure un PDF che resta vettoriale</td><td class="soft" data-label="Perché">spesso sono loghi e icone, da tenere modificabili e nitidi a ogni dimensione</td></tr>
+        <tr><td>Icone</td><td class="soft" data-label="Formati">ICO</td><td data-label="Possono diventare">PNG, JPEG, WebP, AVIF, TIFF, GIF, BMP</td><td class="soft" data-label="Perché">programmi e siti le usano come icone</td></tr>
+        <tr><td>Musica da collezionisti</td><td class="soft" data-label="Formati">Monkey's Audio (APE), WavPack, True Audio (TTA), DSD (DSF, DFF), Musepack (MPC)</td><td data-label="Possono diventare">FLAC, WAV, AIFF, MP3, M4A, AAC, Ogg, Opus</td><td class="soft" data-label="Perché">senza perdita o in alta risoluzione: in MP3 perderebbe proprio la qualità per cui è stata scelta</td></tr>
+      </tbody>
+    </table>
+    <ol class="steps">
+      <li><h3>Apri le impostazioni</h3><p>In Impostazioni, alla voce “Come si decidono le conversioni”, scegli Avanzata. Le scelte che avevi diventano regole e continuano a valere.</p></li>
+      <li><h3>Scegli cosa e in cosa</h3><p>In fondo, in “Converti … in …”, scegli il formato (per esempio Camera RAW) e quello che deve diventare (per esempio JPEG).</p></li>
+      <li><h3>Aggiungi la regola</h3><p>Fai clic su Aggiungi regola. Vale da subito, per i file che arrivano e per Converti ora.</p></li>
+    </ol>
+    <p class="note">Due casi a parte. I file di Publisher si convertono solo con Converti ora, mai al loro arrivo. Gli e-book protetti da DRM, come quelli comprati su Amazon, non si convertono: restano come sono.</p>
   </div>
 </section>
 
