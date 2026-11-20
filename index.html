@@ -66,7 +66,7 @@
     </div>
     <ul class="both">
       <li>Each licence covers 3 computers, Mac and Windows mixed.</li>
-      <li>Need more? Extra computers are €5 each, paid once, up to 10 per licence.</li>
+      <li>Need more? A second licence covers 3 more computers.</li>
       <li>Prices include VAT.</li>
       <li>Not convinced? Full refund within 14 days of any payment.</li>
     </ul>
@@ -112,8 +112,31 @@
         <tr><td>Fonts</td><td class="soft" data-label="From">TTF, OTF, WOFF, WOFF2</td><td data-label="Into">WOFF2, WOFF, TTF, OTF</td></tr>
       </tbody>
     </table>
-    <p class="note">Downloads are converted as soon as they finish; files you already have, with Convert now. Publisher files are converted only with Convert now, never as they arrive. E-books protected by DRM, as bought on Amazon, stay as they are. Camera RAW, Photoshop and SVG files, and music for collectors (APE, WavPack, TTA, DSD, Musepack), can be converted too, with a rule of your own in the advanced settings.</p>
+    <p class="note">Downloads are converted as soon as they finish; files you already have, with Convert now. Some formats are converted only when you ask: see Special formats, below.</p>
     <p class="note">* With LibreOffice, which is free: Pebblemorph installs it for you when you ask.</p>
+  </div>
+</section>
+
+<section class="block" id="special">
+  <div class="wrap">
+    <h2>Special formats</h2>
+    <p class="intro">Some files stay as they are even when you choose a format for their kind, because converting them on their own would lose something. They are converted only when you ask, with a rule of your own.</p>
+    <table class="table">
+      <thead><tr><th>Files</th><th>Formats</th><th>Can become</th><th>Why they are left out</th></tr></thead>
+      <tbody>
+        <tr><td>Camera RAW</td><td class="soft" data-label="Formats">DNG, CR2, CR3, NEF, ARW, ORF, RW2, RAF, PEF and more</td><td data-label="Can become">JPEG, PNG, TIFF, WebP, AVIF, at full resolution</td><td class="soft" data-label="Why">the sensor's raw data, which photo editing needs, would be lost</td></tr>
+        <tr><td>Photoshop</td><td class="soft" data-label="Formats">PSD</td><td data-label="Can become">JPEG, PNG, WebP, AVIF, TIFF, GIF, BMP</td><td class="soft" data-label="Why">the layers would be lost</td></tr>
+        <tr><td>Vector drawings</td><td class="soft" data-label="Formats">SVG</td><td data-label="Can become">PNG, JPEG, WebP, AVIF (at least 1024 pixels), or a PDF that stays vector</td><td class="soft" data-label="Why">often logos and icons, to keep editable and sharp at any size</td></tr>
+        <tr><td>Icons</td><td class="soft" data-label="Formats">ICO</td><td data-label="Can become">PNG, JPEG, WebP, AVIF, TIFF, GIF, BMP</td><td class="soft" data-label="Why">programs and websites use them as icons</td></tr>
+        <tr><td>Music for collectors</td><td class="soft" data-label="Formats">Monkey's Audio (APE), WavPack, True Audio (TTA), DSD (DSF, DFF), Musepack (MPC)</td><td data-label="Can become">FLAC, WAV, AIFF, MP3, M4A, AAC, Ogg, Opus</td><td class="soft" data-label="Why">lossless or high resolution: as MP3 it would lose the very quality it was chosen for</td></tr>
+      </tbody>
+    </table>
+    <ol class="steps">
+      <li><h3>Open the settings</h3><p>In Settings, under "How conversions are decided", choose Advanced. Your choices so far become rules and keep working.</p></li>
+      <li><h3>Choose what and into what</h3><p>At the bottom, in "Convert … to …", pick the format (for example Camera RAW) and what it should become (for example JPEG).</p></li>
+      <li><h3>Add the rule</h3><p>Click Add rule. It works at once, for files as they arrive and for Convert now.</p></li>
+    </ol>
+    <p class="note">Two cases apart. Publisher files are converted only with Convert now, never as they arrive. E-books protected by DRM, as bought on Amazon, are not converted: they stay as they are.</p>
   </div>
 </section>
 
